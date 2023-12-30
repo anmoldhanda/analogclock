@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e2e3f0;
+}
+
+.headertext {
+  background: #ffff;
+  color: #ff7782;
+  border: 1px dashed #ff7782;
+  text-align: center;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 2vw;
+}
+
+/* =============== clock container =============== */
+#clockcontainer {
+  background-image: url("analogclock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 38vw;
+  width: 40vw;
+  margin: 1em auto 0em;
+  box-shadow: 0 0 5px 2px #ff7782;
+  border-radius: 50px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+#clockcontainer:hover {
+  box-shadow: none;
+}
+
+#hourhand,
+#minutehand,
+#secondhand {
+  position: absolute;
+  cursor: pointer;
+  transform-origin: bottom;
+  opacity: 0.6;
+}
+
+#hourhand {
+  background-color: crimson;
+  height: 20%;
+  width: 1%;
+  border-radius: 50px;
+  left: 48.7%;
+  top: 30%;
+}
+
+#minutehand {
+  background-color: rgb(4, 130, 180);
+  height: 26%;
+  width: 1%;
+  border-radius: 50px;
+  left: 48.7%;
+  top: 24%;
+}
+
+#secondhand {
+  background-color: green;
+  height: 33%;
+  width: 1%;
+  border-radius: 50px;
+  left: 48.7%;
+  top: 17%;
+}
